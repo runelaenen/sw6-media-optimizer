@@ -1,0 +1,31 @@
+{
+    "name": "runelaenen/sw6-media-optimizer",
+    "description": "Media Optimizer for Shopware 6",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laenen.me",
+            "homepage": "https://laenen.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RuneLaenen\\MediaOptimizer\\": "src/"
+        }
+    },
+    "require": {
+        "spatie/image-optimizer": "1.3.2"
+    },
+    "require-dev": {
+        "phpro/grumphp-shim": "^1.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "RuneLaenen\\MediaOptimizer\\RuneLaenenMediaOptimizer",
+        "copyright": "(c) by Rune Laenen",
+        "label": {
+            "de-DE": "Media Optimizer",
+            "en-GB": "Media Optimizer"
+        }
+    }
+}

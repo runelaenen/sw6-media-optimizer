@@ -1,0 +1,3 @@
+vendor
+var/cache
+composer.lock

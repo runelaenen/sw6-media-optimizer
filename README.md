@@ -9,7 +9,7 @@
 
 ![Image Optimizer for Shopware 6](https://user-images.githubusercontent.com/3930922/102516043-b9b34780-408e-11eb-92f1-f9b0bdf70888.png)
 
-Optimize image files using [spatie/image-optimizer](https://packagist.org/packages/spatie/image-optimizer)
+Optimize image files using [spatie/image-optimizer](https://packagist.org/packages/spatie/image-optimizer). This package can optimize PNGs, JPGs, SVGs and GIFs by running them through a chain of various [image optimization tools](#optimization-tools). This Shopware plugin uses it's power to optimize the original files uploaded to your Shopware webshop. It doesn't touch any generated (thumbnail) files and thus will not have a lot of impact on the frontend of your website.
 
 ### Optimization tools
 

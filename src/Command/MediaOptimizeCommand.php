@@ -159,6 +159,7 @@ class MediaOptimizeCommand extends Command
         if (!file_exists($mediaLocation)) {
             return;
         }
+
         $sizePre = filesize($mediaLocation);
         $this->sizePre += $sizePre;
 

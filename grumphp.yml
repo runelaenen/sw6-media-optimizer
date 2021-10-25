@@ -1,13 +1,14 @@
 grumphp:
     tasks:
         ecs:
-            config: '../../../vendor/shopware/platform/easy-coding-standard.yml'
+            config: 'vendor/shopware/platform/easy-coding-standard.php'
             clear-cache: true
+            files_on_pre_commit: true
             paths:
                 - 'src'
         eslint:
-            bin: '../../../vendor/shopware/platform/src/Administration/Resources/app/administration/node_modules/.bin/eslint'
-            config: '../../../vendor/shopware/platform/src/Administration/Resources/app/administration/.eslintrc.js'
+            bin: 'vendor/shopware/platform/src/Administration/Resources/app/administration/node_modules/.bin/eslint'
+            config: 'vendor/shopware/platform/src/Administration/Resources/app/administration/.eslintrc.js'
             whitelist_patterns:
                 - /src\/Resources\/app\/administration\/(.*)/
             triggered_by:

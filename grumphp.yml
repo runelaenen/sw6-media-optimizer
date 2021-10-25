@@ -1,7 +1,7 @@
 grumphp:
     tasks:
         ecs:
-            config: 'vendor/shopware/platform/easy-coding-standard.php'
+            config: 'ecs.php'
             clear-cache: true
             files_on_pre_commit: true
             paths:

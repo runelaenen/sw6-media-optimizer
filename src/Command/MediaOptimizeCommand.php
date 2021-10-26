@@ -113,7 +113,7 @@ class MediaOptimizeCommand extends Command
 
         while (($result = $mediaIterator->fetch()) !== null) {
             foreach ($result->getEntities() as $media) {
-                $this->optimize($media, $context);
+                $this->optimize($media);
                 $progressBar->advance();
             }
         }

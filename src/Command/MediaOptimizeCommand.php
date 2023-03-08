@@ -157,6 +157,10 @@ class MediaOptimizeCommand extends Command
 
     private function optimize(MediaEntity $media): void
     {
+        if (empty($media->getFileName()) || empty($media->getFileExtension())) {
+            return;
+        }
+        
         $mediaLocation = $this->projectDir . '/public/' . $this->urlGenerator->getRelativeMediaUrl($media);
         if (!file_exists($mediaLocation)) {
             return;
